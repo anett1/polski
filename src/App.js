@@ -1,26 +1,45 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import styled, { ThemeProvider } from "styled-components";
+import GlobalStyles from "./index.css";
+import theme from "./utils/theme";
+import data from "./data/data";
+import Table from "./components/Table";
+import * as ReactBootstrap from "react-bootstrap";
+import { IoIosHeart } from "react-icons/io";
 
-function App() {
+const Container = styled.div`
+  max-width: 1024px;
+  margin: 20px auto 0 auto;
+  padding: 10px;
+`;
+
+const App = () => {
+  const [words, setWords] = useState([]);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setWords(data);
+    setLoading(true);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ThemeProvider theme={theme}>
+        <GlobalStyles />
+        <div>
+          <Container>
+            <p style={{ textAlign: "right" }}>
+              FOR YOU{" "}
+              <span style={{ color: "red" }}>
+                <IoIosHeart />
+              </span>
+            </p>
+            {loading ? <Table words={words} /> : <ReactBootstrap.Spinner />}
+          </Container>
+        </div>
+      </ThemeProvider>
+    </>
   );
-}
+};
 
 export default App;
