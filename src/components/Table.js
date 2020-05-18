@@ -40,17 +40,41 @@ const Table = ({ words }) => {
   };
 
   const columns = [
-    { dataField: "id", text: "id" },
-    { dataField: "polish", text: "polish" },
-    { dataField: "english", text: "english" },
+    {
+      dataField: "id",
+      text: "id",
+      sort: true,
+      headerStyle: () => {
+        return {
+          width: "60px",
+        };
+      },
+      align: "center",
+    },
+    { dataField: "polish", text: "polish", sort: true },
+    { dataField: "english", text: "english", sort: true },
     {
       dataField: "src",
       text: "audio",
+      sort: false,
+      headerStyle: () => {
+        return {
+          width: "60px",
+        };
+      },
+      align: "center",
+
       formatter: (src) => (
         <AudioPlayerProvider>
           <AudioPlayer file={src} />
         </AudioPlayerProvider>
       ),
+    },
+  ];
+  const defaultSorted = [
+    {
+      dataField: "name",
+      order: "desc",
     },
   ];
   return (
@@ -61,10 +85,12 @@ const Table = ({ words }) => {
             <PaginationListStandalone {...paginationProps} />
             <SizePerPageDropdownStandalone {...paginationProps} />
             <BootstrapTable
+              bootstrap4
               keyField="id"
               data={words}
               columns={columns}
               {...paginationTableProps}
+              defaultSorted={defaultSorted}
             />
           </div>
         )}
