@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d20167e650facd03f5a9450bb902820b",
+    "revision": "5f0a5b7c149c4f2045cdbdb99e1ae836",
     "url": "/polski/index.html"
   },
   {
-    "revision": "09a79ddebef8737e16ff",
-    "url": "/polski/static/css/2.3761eb0c.chunk.css"
+    "revision": "98ac6313dd72158a3b80",
+    "url": "/polski/static/css/2.a1f65902.chunk.css"
   },
   {
-    "revision": "09a79ddebef8737e16ff",
-    "url": "/polski/static/js/2.d757da1a.chunk.js"
+    "revision": "98ac6313dd72158a3b80",
+    "url": "/polski/static/js/2.e226b404.chunk.js"
   },
   {
     "revision": "cc9c1048a65a0217e7c68d61ece799eb",
-    "url": "/polski/static/js/2.d757da1a.chunk.js.LICENSE.txt"
+    "url": "/polski/static/js/2.e226b404.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f882d656896467263b1c",
-    "url": "/polski/static/js/main.4bafdacc.chunk.js"
+    "revision": "170b12e63271efc3ccf1",
+    "url": "/polski/static/js/main.08e0e8f6.chunk.js"
   },
   {
     "revision": "9872a23608ba191ca251",
@@ -210,6 +210,74 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "984a8095cc40494cd900e4ab4df96630",
     "url": "/polski/static/media/punktualny.984a8095.mp3"
+  },
+  {
+    "revision": "118a4e94a4c74767c5d8b42afc37ea7e",
+    "url": "/polski/static/media/sentence1.118a4e94.mp3"
+  },
+  {
+    "revision": "7855a7adb4ef5dff677a4a6118684e96",
+    "url": "/polski/static/media/sentence10.7855a7ad.mp3"
+  },
+  {
+    "revision": "f38a34d7a7b899a9273abb86248caca4",
+    "url": "/polski/static/media/sentence11.f38a34d7.mp3"
+  },
+  {
+    "revision": "ead6157274471e24ba5f3fb0de7339f3",
+    "url": "/polski/static/media/sentence12.ead61572.mp3"
+  },
+  {
+    "revision": "b832d87d15b075906668b36021597143",
+    "url": "/polski/static/media/sentence13.b832d87d.mp3"
+  },
+  {
+    "revision": "18148d37e37a0eb3cf388ed960c553a7",
+    "url": "/polski/static/media/sentence14.18148d37.mp3"
+  },
+  {
+    "revision": "027879ab97af2785156e193b9164fd3e",
+    "url": "/polski/static/media/sentence15.027879ab.mp3"
+  },
+  {
+    "revision": "be22fbee88904d709dc3652726bf9763",
+    "url": "/polski/static/media/sentence16.be22fbee.mp3"
+  },
+  {
+    "revision": "a75b66a23da34a7df2befc4ddbae93d4",
+    "url": "/polski/static/media/sentence17.a75b66a2.mp3"
+  },
+  {
+    "revision": "18fbc0e3f6bf71722fd6bff88e748976",
+    "url": "/polski/static/media/sentence2.18fbc0e3.mp3"
+  },
+  {
+    "revision": "181b323f8089cefdeb3d6768929090e2",
+    "url": "/polski/static/media/sentence3.181b323f.mp3"
+  },
+  {
+    "revision": "11e0f96e81f545b8cccdc50776f16f02",
+    "url": "/polski/static/media/sentence4.11e0f96e.mp3"
+  },
+  {
+    "revision": "eac2e98896315e256b8c0482c3d97780",
+    "url": "/polski/static/media/sentence5.eac2e988.mp3"
+  },
+  {
+    "revision": "326cb8acf556fb23ec72d3237b7afd22",
+    "url": "/polski/static/media/sentence6.326cb8ac.mp3"
+  },
+  {
+    "revision": "47c1eaaa396ca667df56beb9251de90a",
+    "url": "/polski/static/media/sentence7.47c1eaaa.mp3"
+  },
+  {
+    "revision": "6a5356a5b2e3e49ba4dd32d511c9b502",
+    "url": "/polski/static/media/sentence8.6a5356a5.mp3"
+  },
+  {
+    "revision": "f3f6c3166f063bce23320413345544ae",
+    "url": "/polski/static/media/sentence9.f3f6c316.mp3"
   },
   {
     "revision": "f673979a381bc6111d23fe12dbd6b583",
