@@ -11,10 +11,10 @@ import AudioPlayer from "./AudioPlayer";
 
 //import img1 from "../assets/bajka.mp3";
 
-const Table = ({ words }) => {
+const Table = ({ batch }) => {
   const options = {
     custom: true,
-    totalSize: words.length,
+    totalSize: batch.length,
     sizePerPageList: [
       {
         text: "10",
@@ -34,7 +34,7 @@ const Table = ({ words }) => {
       },
       {
         text: "All",
-        value: words.length,
+        value: batch.length + 1,
       },
     ],
   };
@@ -85,9 +85,10 @@ const Table = ({ words }) => {
             <PaginationListStandalone {...paginationProps} />
             <SizePerPageDropdownStandalone {...paginationProps} />
             <BootstrapTable
+              bordered={false}
               bootstrap4
               keyField="id"
-              data={words}
+              data={batch}
               columns={columns}
               {...paginationTableProps}
               defaultSorted={defaultSorted}

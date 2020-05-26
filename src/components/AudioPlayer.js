@@ -1,7 +1,9 @@
 import React from "react";
 import StyledButton from "./Button";
+import LoadingIndicator from "./LoadingIndicator";
 
 import { useAudioPlayer } from "react-use-audio-player";
+import { IconContext } from "react-icons";
 import { IoMdPause, IoMdPlay } from "react-icons/io";
 
 const AudioPlayer = ({ file }) => {
@@ -12,7 +14,12 @@ const AudioPlayer = ({ file }) => {
   });
 
   if (!ready && !loading) return <div>No audio to play</div>;
-  if (loading) return <div>Loading audio</div>;
+  if (loading)
+    return (
+      <div>
+        <LoadingIndicator />
+      </div>
+    );
 
   return (
     <div>
