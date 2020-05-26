@@ -12,7 +12,10 @@ const BoxItem = ({ batchItem }) => {
   const [checked, setChecked] = useState("");
 
   const checkValue = () => {
-    if (value === batchItem.english || value === batchItem.polish) {
+    if (
+      value.toLowerCase() === batchItem.english.toLowerCase() ||
+      value.toLowerCase() === batchItem.polish.toLowerCase()
+    ) {
       setChecked("correct");
     } else {
       setChecked("incorrect");
